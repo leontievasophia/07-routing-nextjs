@@ -40,6 +40,7 @@ export default function NotePreviewClient({ id }: Props) {
           <h1 className={css.title}>{note.title}</h1>
           <p className={css.content}>{note.content}</p>
           <span className={css.tag}>{note.tag}</span>
+          <p>Created: {new Date(note.createdAt).toLocaleDateString("uk-UA")}</p>
         </div>
       </div>
     </Modal>
